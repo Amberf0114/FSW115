@@ -1,0 +1,94 @@
+{
+    "appetizer" : {
+        "Chicken Wings" :[
+            {
+                "Ingredients" :"Boneless Chicken/Barbeque Sauce/Garlic/Onion"
+            },
+            {
+                "Description" : "Delicious boneless wings in our homestyle barbeque, seasoned to perfection!"
+            }
+        ],
+        "Tacos" :[
+            {
+                "Ingredients" :"Flour Tortilla/Chicken or Beef/Cheese Sauce/Lettuce/Sour Cream"
+            },
+            {
+                "Description" :"Spunky soft shell tacos with your choice of chicken or beef."
+            }
+        ]
+        
+    },
+    "cold-sandwiches" : {
+        "Classic Turkey" : [
+            {
+                "Ingredients" : "Light Turkey/Rye Bread/Mustard"
+            },
+            {
+                "Description" : "Classic Turkey..so good"
+            }
+        ],
+        "Ham n' Swiss" : [
+            {
+                "Ingredients" : "Honey Glazed Ham/ Lettuce/ Tomato/ Mayo/ Bread not included"
+            },
+            {
+                "Description" : "You thought this sandwich needed bread until you saw everything encompassed in two hacks of honey glazed ham."
+            }
+        ]
+    },
+    "hot-sandwiches" : {
+        "Beast Brisket" : [
+            {
+                "Ingredients" : "Brazed Beef Brisket/Toasted Garlic Bread/Pepper/ Tomato"
+            },
+            {
+                "Description" : "Order a to-go plate too. Just trust me"
+            }
+        ],
+        "Sizzlin' Salmon" : [
+            {
+                "Ingredients" : "Salmon Filet/Lemon Glaze/Siracha Mayo "
+            },
+            {
+                "Description" : "Wild caught, spicy salmon with a delicate lemon glaze."
+            }
+        ]
+    },
+    "desserts" : {
+        "The Volcano" : [
+            {
+                "Ingredients" : "Butter Pecan Cake/Chocolate Fondu/Carmel/Pecans"
+            },
+            {
+                "Description" : "A funnel-shaped butter pecan cake exploding with chocolate fondu and caramel"
+            }
+        ],
+        "Key-Lime Pie" : [
+            {
+                "Ingredients" : "Keylime/Pie Crust"
+            },
+            {
+                "Description" : "A classic Key-Lime pie, just like grandma used to make."
+            }
+        ]
+    },
+    "drinks" : {
+        "Spit Cup" : [
+            {
+                "Ingredients" : "Coacoa/Seltzer Water/Sugar"
+            },
+            {
+                "Description" : "A fizzy, sweet, chocolate masterpiece."
+            }
+        ],
+        "Frozen Nut Job" : [
+            {
+                "Ingredients" : "Peanut Butter/Ice Cream/Salted Caramel/Oat Milk"
+            },
+            {
+                "Description" : "A peanut butter milkshake with a salted caramel drizzle."
+            }
+        ]
+    }
+    
+}

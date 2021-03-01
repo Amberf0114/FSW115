@@ -1,0 +1,14 @@
+#category {
+    color:rgb(92, 19, 19);
+    font-size: 150%;
+    font-weight: bolder;
+    list-style-type: none;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+}
+li {
+    color:rgb(82, 80, 80);
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 135%;
+}

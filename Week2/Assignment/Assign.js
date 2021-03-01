@@ -1,23 +1,3 @@
-// let postMan = {
-//     "people": "http://swapi.dev/api/people/",
-//     "planets": "http://swapi.dev/api/planets/",
-//     "films": "http://swapi.dev/api/films/",
-//     "species": "http://swapi.dev/api/species/",
-//     "vehicles": "http://swapi.dev/api/vehicles/",
-//     "starships": "http://swapi.dev/api/starships/"
-// }
-
-// let list = document.getElementById("list")
-
-// for (var i = 0; i < postMan.length; i++){
-    
-//     //let items = document.createElement("li")
-//     //items.textContent = postMan[i].people  //<<<What is wrong here?
-//     //list.appendChild(items)
-//     list.innerHTML += "<li>" + postMan[i]
-// }  
-
-
 let varName = `{
     "response_code": 0,
     "results": [

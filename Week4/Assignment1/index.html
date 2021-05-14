@@ -10,12 +10,19 @@
 <body >
     <h1 class='header'>Current To-Do Items</h1>
     <div >
-        <form>
-            Let's do this today: <input/>
-        <button id='btn'>Add</button>
+        <form name = 'frm' id = 'frm'>
+            Let's do this today: 
+            <input name = 'name' type= 'text' placeholder="Title"/>
+            <input name = 'description' type= 'text' placeholder="Description"/>
+            <input name = 'price' type= 'number' placeholder="Price"/>
+
+        <button type='submit' id='btn'>Add</button>
         </form>
+
+        <div id= 'dataContainer'></div>
+        <button id = 'update' >Update</button>
     </div>
-    <script>'https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js'</script>
-    <script>src ='ToDo.js'</script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js'></script>
+    <script src ='ToDo.js'></script>
 </body>
 </html>

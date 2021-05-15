@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+    font-size: xx-large;
+    margin: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
+    border: 2px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 50px;
+}
+
+#button1{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border-radius: 30%;
+    padding: 5%;
+    background-color:rgb(202, 163, 54);
+    box-shadow: black 10%;
+}

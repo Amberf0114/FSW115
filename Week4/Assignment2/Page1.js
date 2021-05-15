@@ -1,13 +1,18 @@
 document.getElementById('btn').addEventListener('click', function() {
-    axios.get('http://api.bryanuniversity.edu/amber-freeman/list/')
+    
+
+    axios.get('http://api.bryanuniversity.edu/amber-freeman2/list/')
         .then(response => {
-            for(i=0; i< response.data.length; i++){
-                let list = document.createElement('li')
-                 list.textContent = response.data[i].name
-                 document.body.appendChild(list)
+
+
+            for(let i=0; i< response.data.length; i++){
+                let itemName = document.createElement('h1')
+                 itemName.textContent = response.data[i].name
+                 document.body.appendChild(itemName)
      
              }
         })
+        .catch(err => console.log(err))
         
 })
-        .catch()
+    

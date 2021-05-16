@@ -14,41 +14,47 @@ function list(data) {
     for (let i = 0; i < data.length; i++){
        let names = document.createElement('h1')
         names.textContent = data[i].name
+        names.style.textDecoration = 'underline'
         dataContainer.appendChild(names)
 
-        if (data[i].isComplete === true){
-            names.style.backgroundColor = 'brown'
-        }
-
-        let prices = document.createElement('p')
-        prices.textContent = data[i].price
-        dataContainer.appendChild(prices)
+        // if (data[i].isComplete === true){
+        //     names.style.backgroundColor = 'none'
+        // }
         
-        let descriptions = document.createElement('p')
+        let descriptions = document.createElement('h2')
         descriptions.textContent = data[i].description
+        descriptions.style.color = 'grey'
         dataContainer.appendChild(descriptions)
 
-        // PUT code
+        // PUT code                                                  //HELP: getting checkmark to show up & finshing DELETE
+        const label = document.createElement('label')
+        label.textContent= "Complete:"
+        label.style.fontStyle = 'italic'
+        dataContainer.appendChild(label)
         const checkbox = document.createElement('input')
         checkbox.type = 'checkbox'
         dataContainer.appendChild(checkbox)
         checkbox.addEventListener('click', function(e){
             e.preventDefault()
-            alert(data[i]._id)
 
             let id = data[i]._id
             let hold 
 
-            if(data[i].isComplete === true){
+            if(data[i].isComplete === true){                 
                 hold = {
-                    isComplete : false
+                    isComplete : false,                      
+                    // checkbox: 'unchecked'
                 }
-                names.style.backgroundColor = 'red'
+                names.style.textDecoration = 'none'
+                checkbox.checked === false
             } else {
                 hold = {
-                    isComplete : true
+                    isComplete : true,
+                    // checkbox : 'checked'
                 }
-                names.style.backgroundColor = 'blue'
+                names.style.textDecoration = 'line-through'
+                checkbox.checked === true
+
 
  
             }
@@ -57,6 +63,20 @@ function list(data) {
             .then(response => console.log(data[i].isComplete)) 
             .catch(error => console.log(error))
         
+        })
+
+        // DELETE code
+        var button = document.createElement('button')
+        button.textContent ='Remove'
+        button.style.backgroundColor = 'rgb(165, 55, 55)'
+        dataContainer.appendChild(button)
+        button.addEventListener('click', function(){
+        
+            let id = data[i]._id
+
+            axios.delete('http://api.bryanuniversity.edu/amber-freeman/list/' + id)
+            .then(response => console.log(data[i])) 
+            .catch(error => console.log(error))
         })
     }
 
@@ -75,12 +95,10 @@ myForm.addEventListener('submit', function(event) {     //need to review event l
     
     const postData = {
         name: myForm.name.value,
-        price: myForm.price.value,
         description: myForm.description.value
     }
     
     myForm.name.value = '',
-    myForm.price.value = ''
     myForm.description.value = ''
 
     axios.post('http://api.bryanuniversity.edu/amber-freeman/list', postData)
@@ -88,3 +106,15 @@ myForm.addEventListener('submit', function(event) {     //need to review event l
     .catch(error => console.log(error))
 })
 
+// DELETE code
+
+// let endPoint = getEndpoint = ()=> {
+    //for(i=0; i<[url].length; i++){
+        //code to grab endpoints via [0], [1], etc...
+    //}
+//};
+
+//Switch statement? Such as if [0] was clicked, grab endpoint, and execute >>>
+    // axios.delete('http://api.bryanuniversity.edu/amber-freeman/list' + '/' + endPoint)
+    //     .then(response => alert('Item Deleted))
+    //     .catch(err => console.log(err))

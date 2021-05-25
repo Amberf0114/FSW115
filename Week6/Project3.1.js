@@ -17,12 +17,12 @@ const getData = async () => {
 const characterData = (char, episode) => {
     for (let i =0; i < char.length; i++) {
         const h1 = document.createElement('h1')
-        h1.textContent = 'Character: ' + char[i].name 
+        h1.textContent = 'Character: ' + char[i].name
         document.body.appendChild(h1)
         
-        
+
         var ol = document.createElement('ol')
-        h1.appendChild(ol)
+        document.body.appendChild(ol)
         
         const li = document.createElement('li')
         li.textContent = 'Featured in Episodes: '

@@ -1,0 +1,17 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+
+#episode{
+    color: blue;
+}
+
+li {
+    font-size: smaller;
+    font-style: italic;
+}
+
+ol{
+    border: 2px solid black;
+}

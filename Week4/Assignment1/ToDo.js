@@ -17,9 +17,6 @@ function list(data) {
         names.style.textDecoration = 'underline'
         dataContainer.appendChild(names)
 
-        // if (data[i].isComplete === true){
-        //     names.style.backgroundColor = 'none'
-        // }
         
         let descriptions = document.createElement('h2')
         descriptions.textContent = data[i].description
